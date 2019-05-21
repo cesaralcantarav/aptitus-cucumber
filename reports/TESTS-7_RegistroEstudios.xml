@@ -1,0 +1,23 @@
+<testsuite errors="0" failures="0" hostname="DESKTOP-MGEBGCD" name="7_RegistroEstudios.Registro Satisfactorio Estudio" skipped="0" tests="1" time="17.661437" timestamp="2019-01-02T16:39:45.816797"><testcase classname="7_RegistroEstudios.Registro Satisfactorio Estudio" name="Postulante registra su estudio correctamente -- @1.1 Credenciales" status="passed" time="17.661437"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Postulante registra su estudio correctamente -- @1.1 Credenciales
+    Given postulante se encuentra en opcion estudio ... passed in 5.066s
+    When postulante hace click en boton Agregar Estudio ... passed in 5.138s
+    When postulante selecciona Grado Universitario ... passed in 0.111s
+    When postulante selecciona Estado Titulado ... passed in 0.066s
+    When postulante ingresa Institucion Universidad del Pacifico ... passed in 0.301s
+    When postulante selecciona primera opcion segun su institucion ... passed in 4.132s
+    When postulante ingresa Carrera Arquitectura ... passed in 0.173s
+    When postulante selecciona un mes inicio de estudio Enero ... passed in 0.073s
+    When postulante selecciona un anio inicio de estudio 2015 ... passed in 0.087s
+    When postulante selecciona un mes fin de estudio Octubre ... passed in 0.065s
+    When postulante selecciona un anio fin de estudio 2015 ... passed in 0.072s
+    When postulante selecciona un pais Perú ... passed in 0.062s
+    When postulante hace click en boton Guardar Estudios ... passed in 0.203s
+    Then postulante visualiza tooltip de confirmacion de Estudio Guardado Se creó el estudio del postulante correctamente ... passed in 2.112s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

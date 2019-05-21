@@ -1,0 +1,34 @@
+<testsuite errors="1" failures="0" hostname="DESKTOP-MGEBGCD" name="1_LoginPostulante.Login Postulante" skipped="0" tests="1" time="22.995022" timestamp="2019-01-02T16:38:26.834947"><testcase classname="1_LoginPostulante.Login Postulante" name="Postulante ingresa con usuario y contrasenia correctamente -- @1.1 Credenciales" status="failed" time="22.995022"><error message="Message: &#10;" type="TimeoutException">
+<![CDATA[
+Failing step: Then postulante visualiza la vista Perfil Destacar Perfil ... failed in 10.412s
+Location: features/1_LoginPostulante.feature:13
+Traceback (most recent call last):
+  File "c:\users\dsapaicoa\appdata\local\programs\python\python37\lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "c:\users\dsapaicoa\appdata\local\programs\python\python37\lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features\steps\1_login_postulante_steps.py", line 37, in postulante_visualiza_perfil
+    perfil_page = context.web.find_by_xpath("/html/body/div/div/div[2]/div/section/div[1]/div/div/div[2]/a[1]/button")
+  File "C:\Users\dsapaicoa\PycharmProjects\apt_pruebas_vsc\web\web.py", line 25, in find_by_xpath
+    return self._web_driver_wait.until(EC.visibility_of_element_located((By.XPATH, xpath)))
+  File "c:\users\dsapaicoa\appdata\local\programs\python\python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Postulante ingresa con usuario y contrasenia correctamente -- @1.1 Credenciales
+    Given postulante ingresa a Aptitus ... passed in 7.130s
+    When postulante hace click en link Ingresa ... passed in 0.112s
+    When postulante ingresa email postulante6_dev4c@ecodigital.pe ... passed in 0.178s
+    When postulante ingresa constrasenia 123456 ... passed in 0.075s
+    When postulante hace click en boton Ingresar ... passed in 0.087s
+    When postulante espera unos segundos ... passed in 5.001s
+    Then postulante visualiza la vista Perfil Destacar Perfil ... failed in 10.412s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

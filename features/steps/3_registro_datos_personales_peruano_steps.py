@@ -3,7 +3,7 @@ from behave.log_capture import capture
 
 @given(u"postulante ingresa a Aptitus para registrar sus datos")
 def postulante_ingresa_aptitus_r(context):
-    context.web.open("https://dev.4a.aptitus.com/")
+    context.web.open("https://pre4c.aptitus.com/")
 
 @when("postulante hace click para desplegar el menu")
 def postulante_click_menu(context):

@@ -1,0 +1,42 @@
+<testsuite errors="1" failures="0" hostname="DESKTOP-MGEBGCD" name="2_RegistroPostulanteEmail.Registro Postulante" skipped="0" tests="1" time="15.898786" timestamp="2019-01-02T16:38:42.752439"><testcase classname="2_RegistroPostulanteEmail.Registro Postulante" name="Postulante se registra con email y clave correctamente -- @1.1 Data" status="failed" time="15.898786"><error message="Message: &#10;" type="TimeoutException">
+<![CDATA[
+Failing step: When postulante hace click en link Registrate ... failed in 10.206s
+Location: features/2_RegistroPostulanteEmail.feature:7
+Traceback (most recent call last):
+  File "c:\users\dsapaicoa\appdata\local\programs\python\python37\lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "c:\users\dsapaicoa\appdata\local\programs\python\python37\lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features\steps\2_registro_postulante_steps.py", line 11, in postulante_click_link_registrate
+    link = context.web.find_by_xpath("/html/body/header/section[2]/div[1]/div/ul/li[3]/a")
+  File "C:\Users\dsapaicoa\PycharmProjects\apt_pruebas_vsc\web\web.py", line 25, in find_by_xpath
+    return self._web_driver_wait.until(EC.visibility_of_element_located((By.XPATH, xpath)))
+  File "c:\users\dsapaicoa\appdata\local\programs\python\python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Postulante se registra con email y clave correctamente -- @1.1 Data
+    Given postulante ingresa a Aptitus para registrarse ... passed in 5.693s
+    When postulante hace click en link Registrate ... failed in 10.206s
+    When postulante ingresa nombre Zarela ... skipped in 0.000s
+    When postulante ingresa apellido paterno Monteverde ... skipped in 0.000s
+    When postulante ingresa apellido materno Velasquez ... skipped in 0.000s
+    When postulante ingresa e-mail para registrarse postulante6_dev4c@ecodigital.pe ... skipped in 0.000s
+    When postulante ingresa contrasenia para registrarse 123456 ... skipped in 0.000s
+    When postulante ingresa trabajo ideal Analista ... skipped in 0.000s
+    When postulante espera ... skipped in 0.000s
+    When postulante selecciona opcion del autocomplete ... skipped in 0.000s
+    When postulante espera2 ... skipped in 0.000s
+    When postulante selecciona lugar ideal ... skipped in 0.000s
+    When postulante hace click en boton Crear cuenta ... skipped in 0.000s
+    When postulante espera3 ... skipped in 0.000s
+    Then postulante visualiza la vista Mi Perfil Destacar Perfil ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

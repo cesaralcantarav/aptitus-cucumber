@@ -1,0 +1,18 @@
+<testsuite errors="0" failures="0" hostname="DESKTOP-MGEBGCD" name="92_RegistroReconocimiento.Registro Satisfactorio Reconocimiento" skipped="0" tests="1" time="9.543548" timestamp="2019-01-02T16:40:13.833938"><testcase classname="92_RegistroReconocimiento.Registro Satisfactorio Reconocimiento" name="Postulante registra su reconocimiento correctamente -- @1.1 Credenciales" status="passed" time="9.543548"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Postulante registra su reconocimiento correctamente -- @1.1 Credenciales
+    Given postulante se encuentra en opcion Reconocimiento ... passed in 0.070s
+    When postulante hace click en boton Agregar Reconocimiento ... passed in 5.082s
+    When postulante ingresa un titulo Taller Básico "Manipulación, Almacenamiento y Transporte de GLP" ... passed in 0.363s
+    When postulante ingresa un emisor Ministerio de Petróleo y Minería ... passed in 0.173s
+    When postulante selecciona un mes de logro Julio ... passed in 0.058s
+    When postulante selecciona un anio de logro 2018 ... passed in 0.064s
+    When postulante ingresa descripcion del logro Certificado que demuestra mi conocimiento en la gestión (manipulación, almacenamiento y transporte) de Gas Licuado al Petróleo. ... passed in 0.577s
+    When postulante hace click en boton Guardar Reconocimiento ... passed in 0.065s
+    Then postulante visualiza tooltip de confirmacion de Reconocimiento Guardado Se creó el logro del postulante correctamente. ... passed in 3.092s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

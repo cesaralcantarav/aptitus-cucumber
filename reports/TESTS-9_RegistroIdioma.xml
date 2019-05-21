@@ -1,0 +1,40 @@
+<testsuite errors="1" failures="0" hostname="DESKTOP-MGEBGCD" name="9_RegistroIdioma.Registro Satisfactorio Idioma" skipped="0" tests="1" time="0.137974" timestamp="2019-01-02T16:40:27.533748"><testcase classname="9_RegistroIdioma.Registro Satisfactorio Idioma" name="Postulante registra su idioma correctamente -- @1.1 Credenciales" status="failed" time="0.137974"><error message="Message: unknown error: Element is not clickable at point (809, -335)&#10;  (Session info: chrome=71.0.3578.98)&#10;  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)&#10;" type="WebDriverException">
+<![CDATA[
+Failing step: When postulante hace click en boton Agregar Idioma ... failed in 0.070s
+Location: features/9_RegistroIdioma.feature:7
+Traceback (most recent call last):
+  File "c:\users\dsapaicoa\appdata\local\programs\python\python37\lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "c:\users\dsapaicoa\appdata\local\programs\python\python37\lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features\steps\9_registro_idioma_steps.py", line 12, in postulante_click_boton_agidioma
+    add_idioma_btn.click()
+  File "c:\users\dsapaicoa\appdata\local\programs\python\python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "c:\users\dsapaicoa\appdata\local\programs\python\python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 628, in _execute
+    return self._parent.execute(command, params)
+  File "c:\users\dsapaicoa\appdata\local\programs\python\python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 320, in execute
+    self.error_handler.check_response(response)
+  File "c:\users\dsapaicoa\appdata\local\programs\python\python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element is not clickable at point (809, -335)
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Postulante registra su idioma correctamente -- @1.1 Credenciales
+    Given postulante se encuentra en opcion idioma ... passed in 0.068s
+    When postulante hace click en boton Agregar Idioma ... failed in 0.070s
+    When postulante selecciona un Idioma Italiano ... skipped in 0.000s
+    When postulante selecciona nivel escrito Básico ... skipped in 0.000s
+    When postulante selecciona nivel oral Intermedio ... skipped in 0.000s
+    When postulante hace click en boton Guardar Idioma ... skipped in 0.000s
+    Then postulante visualiza tooltip de confirmacion de Idioma Guardado Se agregó el idioma del postulante correctamente. ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

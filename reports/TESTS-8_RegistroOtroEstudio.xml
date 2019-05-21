@@ -1,0 +1,21 @@
+<testsuite errors="0" failures="0" hostname="DESKTOP-MGEBGCD" name="8_RegistroOtroEstudio.Registro Satisfactorio Otro Estudio" skipped="0" tests="1" time="7.821904" timestamp="2019-01-02T16:39:53.647696"><testcase classname="8_RegistroOtroEstudio.Registro Satisfactorio Otro Estudio" name="Postulante registra su otro estudio correctamente -- @1.1 Credenciales" status="passed" time="7.821904"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Postulante registra su otro estudio correctamente -- @1.1 Credenciales
+    Given postulante se encuentra en opcion otro estudio ... passed in 0.071s
+    When postulante hace click en boton Agregar Otro Estudio ... passed in 5.097s
+    When postulante ingresa otro estudio nombre Curso de cobol ... passed in 0.177s
+    When postulante ingresa otro estudio institucion Universidad de Santander ... passed in 0.261s
+    When postulante selecciona tipo otro estudio Especialización ... passed in 0.082s
+    When postulante selecciona pais Santa Sede (Vaticano) ... passed in 0.109s
+    When postulante selecciona un mes inicio de otro estudio Septiembre ... passed in 0.079s
+    When postulante selecciona un anio inicio de otro estudio 1990 ... passed in 0.072s
+    When postulante selecciona un mes fin de otro estudio Enero ... passed in 0.063s
+    When postulante selecciona un anio fin de otro estudio 2000 ... passed in 0.073s
+    When postulante hace click en boton Guardar Otro Estudio ... passed in 0.180s
+    Then postulante visualiza tooltip de confirmacion de Otro Estudio Guardado Se creó el otro estudio del postulante correctamente. ... passed in 1.558s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

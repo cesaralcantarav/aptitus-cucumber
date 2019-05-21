@@ -1,0 +1,14 @@
+<testsuite errors="0" failures="0" hostname="DESKTOP-MGEBGCD" name="93_RegistroAptitudes.Registro Satisfactorio Aptitud" skipped="0" tests="1" time="8.388779" timestamp="2019-01-02T16:40:22.230721"><testcase classname="93_RegistroAptitudes.Registro Satisfactorio Aptitud" name="Postulante registra su aptitud correctamente -- @1.1 Credenciales" status="passed" time="8.388779"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Postulante registra su aptitud correctamente -- @1.1 Credenciales
+    Given postulante se encuentra en opcion Aptitudes ... passed in 0.069s
+    When postulante hace click en boton Agregar Aptitud ... passed in 5.066s
+    When postulante ingresa Aptitud proactivo ... passed in 0.104s
+    When postulante hace click en boton Guardar Aptitud ... passed in 0.077s
+    Then postulante visualiza tooltip de confirmacion de Aptitud Guardada Se creó la habilidad del postulante correctamente ... passed in 3.073s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

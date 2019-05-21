@@ -1,3 +1,4 @@
+
 Feature: Registro Satisfactorio Estudio
     Como postulante requiero registrar mi Estudio
 
@@ -7,6 +8,7 @@ Feature: Registro Satisfactorio Estudio
         When postulante selecciona Grado <grado>
         When postulante selecciona Estado <estado>
         When postulante ingresa Institucion <institucion>
+        When postulante selecciona primera opcion segun su institucion
         When postulante ingresa Carrera <carrera>
         When postulante selecciona un mes inicio de estudio <mes_inicio>
         When postulante selecciona un anio inicio de estudio <anio_inicio>

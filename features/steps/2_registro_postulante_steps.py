@@ -4,7 +4,7 @@ from behave.log_capture import capture
 
 @given(u"postulante ingresa a Aptitus para registrarse")
 def postulante_ingresa_aptitus_r(context):
-    context.web.open("https://dev.4a.aptitus.com/")
+    context.web.open("https://pre4c.aptitus.com/")
 
 @when(u"postulante hace click en link Registrate")
 def postulante_click_link_registrate(context):
@@ -65,6 +65,10 @@ def postulante_selecciona_lugar_ideal(context):
 def postulante_click_boton_crearcuenta(context):
     crea_cuenta_btn = context.web.find_by_xpath("//*[@id='frmUserRegistrationFast']/div[4]/div/button")
     crea_cuenta_btn.click()
+
+@when(u"postulante espera3")
+def postulante_espera(context):
+    context.web.time_sleep() 
 
 @then(u"postulante visualiza la vista Mi Perfil {vista}")
 def postulante_visualiza_perfil(context, vista):

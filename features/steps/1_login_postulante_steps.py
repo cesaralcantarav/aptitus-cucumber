@@ -4,7 +4,7 @@ from behave.log_capture import capture
 
 @given("postulante ingresa a Aptitus")
 def postulante_ingresa_aptitus(context):
-    context.web.open("https://dev.4a.aptitus.com/")
+    context.web.open("https://pre4c.aptitus.com/")
 
 @when("postulante hace click en link Ingresa")
 def postulante_click_link_ingresa(context):

@@ -1,3 +1,4 @@
+
 Feature: Registro Satisfactorio Pretension Salarial
     Como postulante requiero registrar mi pretension salarial
 

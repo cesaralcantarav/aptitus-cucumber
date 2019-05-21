@@ -14,7 +14,7 @@ def postulante_click_boton_edit_pres(context):
 
 @when(u"postulante ingresa su presentacion {presentacion}")
 def postulante_ingresa_presentacion(context, presentacion):
-    prese_field = context.web.find_by_id("summary")
+    prese_field = context.web.find_by_name("summary")
     prese_field.send_keys(str(presentacion))
 
 @when(u"postulante hace click en boton Guardar Presentacion")

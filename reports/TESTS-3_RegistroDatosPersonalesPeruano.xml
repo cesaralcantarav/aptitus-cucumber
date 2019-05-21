@@ -1,0 +1,29 @@
+<testsuite errors="0" failures="0" hostname="DESKTOP-MGEBGCD" name="3_RegistroDatosPersonalesPeruano.Registro Datos Personales Peruano" skipped="0" tests="1" time="16.462117" timestamp="2019-01-02T16:38:59.232535"><testcase classname="3_RegistroDatosPersonalesPeruano.Registro Datos Personales Peruano" name="Postulante peruano registra sus datos personales correctamente -- @1.1 Credenciales" status="passed" time="16.462117"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Postulante peruano registra sus datos personales correctamente -- @1.1 Credenciales
+    Given postulante ingresa a Aptitus para registrar sus datos ... passed in 2.976s
+    When postulante hace click para desplegar el menu ... passed in 0.060s
+    When postulante hace click en menu Mi Perfil ... passed in 0.998s
+    When postulante hace click en botón Editar Datos Personales ... passed in 1.698s
+    When postulante registra su nombre NombEdit ... passed in 0.202s
+    When postulante registra su apellido paterno Apepat ... passed in 0.140s
+    When postulante registra su apellido materno Apemat ... passed in 0.121s
+    When postulante registra su fecha de nacimiento 25/12/1993 ... passed in 0.155s
+    When postulante selecciona su genero Femenino ... passed in 0.071s
+    When postulante selecciona su tipo de documento DNI ... passed in 0.061s
+    When postulante registra su numero de documento 09994356 ... passed in 0.076s
+    When postulante registra su celular 123456789 ... passed in 0.097s
+    When postulante registra su telefono fijo 3492968 ... passed in 0.105s
+    When postulante selecciona su estado civil Unión Libre ... passed in 0.073s
+    When postulante ingresa su ubicacion San Isidro, Lima, Lima, Perú ... passed in 0.416s
+    When postulante espera que se deplieguen opciones ... passed in 5.000s
+    When postulante selecciona la primera opción segun su ubicacion ... passed in 0.083s
+    When postulante registra su direccion Calle los geranios nro 23 ... passed in 0.308s
+    When postulante hace click en botón Guardar ... passed in 0.191s
+    Then postulante visualiza tooltip con mensaje Se actualizó la información del postulante correctamente. ... passed in 3.631s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

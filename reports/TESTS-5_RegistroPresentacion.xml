@@ -1,0 +1,14 @@
+<testsuite errors="0" failures="0" hostname="DESKTOP-MGEBGCD" name="5_RegistroPresentacion.Registro Satisfactorio Presentacion" skipped="0" tests="1" time="9.478846" timestamp="2019-01-02T16:39:17.150716"><testcase classname="5_RegistroPresentacion.Registro Satisfactorio Presentacion" name="Postulante registra su presentacion correctamente -- @1.1 Credenciales" status="passed" time="9.478846"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Postulante registra su presentacion correctamente -- @1.1 Credenciales
+    Given postulante se encuentra en opcion Presentacion ... passed in 5.072s
+    When postulante hace click en boton Editar Presentacion ... passed in 0.083s
+    When postulante ingresa su presentacion ING. ELECTRONICO DE LA UNMSM - TITULADO 2013, proactivo,dispuesto a asumir retos y con ellos incrementar mi experiencia laboral actual, con aspiraciones de participar en la gran diversidad de aplicaciones de la ingeniería. ... passed in 0.618s
+    When postulante hace click en boton Guardar Presentacion ... passed in 0.071s
+    Then postulante visualiza tooltip de confirmacion de Presentacion Guardada Se actualizó correctamente su información de Presentación ... passed in 3.635s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

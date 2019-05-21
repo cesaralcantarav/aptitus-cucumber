@@ -1,3 +1,4 @@
+
 Feature: Registro Postulante
     Como postulante requiero registrarme en el portal aptitus.com
 
@@ -15,11 +16,11 @@ Feature: Registro Postulante
         When postulante espera2
         When postulante selecciona lugar ideal
         When postulante hace click en boton Crear cuenta
-        When postulante espera unos segundos
+        When postulante espera3
         Then postulante visualiza la vista Mi Perfil <vista>
 
             Examples: Data
                 |   nombre      |    ape_pat    |   ape_mat     |   email                                |   contrasenia |   trabajo_ideal       |   lugar_ideal     |   vista           |
-                |   Zarela      |   Monteverde  |   Velasquez   |   zarela.montemayor42@ecodigital.pe    |   123456      |   Analista            |   Amazonas        |   Destacar Perfil |
+                |   Zarela      |   Monteverde  |   Velasquez   |   postulante1_pre4c@ecodigital.pe    |   123456      |   Analista            |   Amazonas        |   Destacar Perfil |
 
 

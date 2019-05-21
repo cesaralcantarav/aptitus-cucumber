@@ -1,5 +1,5 @@
-# language: en
 @skip
+# language: en
 Feature: Login Postulante
     Como postulante requiero iniciar sesión en el portal aptitus.com para acceder a Mi cuenta
 
@@ -14,6 +14,6 @@ Feature: Login Postulante
 
             Examples: Credenciales
                 | email                           | contrasenia | vista           |
-                | deypostulante45@ecodigital.pe   | 123456      | Destacar Perfil |
+                | postulante6_dev4c@ecodigital.pe | 123456      | Destacar Perfil |
 
 

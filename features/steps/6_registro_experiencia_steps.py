@@ -68,10 +68,10 @@ def postulante_click_btn_addexp(context):
     addexp_btn = context.web.find_by_xpath("//*[@id='body']/div[2]/div[5]/div[1]/div/form/div/div[7]/button[2]/span")   
     addexp_btn.click()
 
-@then(u"postulante visualiza tooltip de confirmacion de Experiencia Guardada")
+@then(u"postulante visualiza tooltip de confirmacion de Experiencia Guardada {mensaje}")
 def postulante_visualiza_toolt_exp(context, mensaje):
     correcto_tooltip = context.web.find_by_class_name("g-notify_message")
-    assert (mensaje==correcto_tooltip.text)
+    assert (mensaje == correcto_tooltip.text)
 
 
 

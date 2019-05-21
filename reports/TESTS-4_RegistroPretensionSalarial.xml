@@ -1,0 +1,14 @@
+<testsuite errors="0" failures="0" hostname="DESKTOP-MGEBGCD" name="4_RegistroPretensionSalarial.Registro Satisfactorio Pretension Salarial" skipped="0" tests="1" time="8.408256" timestamp="2019-01-02T16:39:07.663810"><testcase classname="4_RegistroPretensionSalarial.Registro Satisfactorio Pretension Salarial" name="Postulante registra su pretension salarial correctamente -- @1.1 Credenciales" status="passed" time="8.408256"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Postulante registra su pretension salarial correctamente -- @1.1 Credenciales
+    Given postulante se encuentra en opcion Pretension Salarial ... passed in 5.067s
+    When postulante hace click en boton Editar Pretension Salarial ... passed in 0.082s
+    When postulante ingresa su pretension salarial 400000 ... passed in 0.076s
+    When postulante hace click en boton Guardar ... passed in 0.068s
+    Then postulante visualiza tooltip de confirmacion pretension guardada Se actualizó correctamente su pretensión salarial ... passed in 3.115s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
